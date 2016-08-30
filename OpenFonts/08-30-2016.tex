@@ -1,0 +1,253 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Archit}{Srivastava}{ \urlstyle{same}\href{http://github.com/eh2arch}{github.com/eh2arch} | \href{http://fb.co/archit.sri}{fb.co/archit.sri}\\
+\href{mailto:archits@usc.edu}{archits@usc.edu} | 323.649.0492 | \href{mailto:arch.srivastava.2@gmail.com}{arch.srivastava.2@gmail.com}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection[University of Southern California]{University of Southern\\ California}
+\descript{Master's in Computer Science}
+\location{Expected May 2018 | Los Angeles, CA}
+Viterbi School of Engineering \\
+Relevant Coursework: Artificial Intelligence, Algorithms
+\sectionsep
+
+\subsection[National Institute of Technology]{National Institute of \\ Technology}
+\descript{BTech in Information Technology}
+\location{May 2016 | Durgapur, West Bengal, India}
+\location{ Cum. GPA: 9.04 / 10.0}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Coursework}
+%\subsection{Graduate}
+%
+%\sectionsep
+%
+%\subsection{Undergraduate}
+%Information Retrieval \\
+%Operating Systems \\
+%Artificial Intelligence + Practicum \\
+%Functional Programming \\
+%Computer Graphics + Practicum \\
+%{\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst 2x) }}} \\
+%Unix Tools and Scripting \\
+%\sectionsep
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Advanced:}
+C/C++ \textbullet{}   C\# \textbullet{} Ruby \textbullet{} JavaScript \textbullet{} HTML/CSS \textbullet{} Python\\ 
+\location{Intermediate:}
+Java \textbullet{} SQL \textbullet{} PHP \textbullet{} \LaTeX\ \\
+\location{Basic:}
+Shell \textbullet{} Assembly \\
+\location{Platforms/Frameworks:}
+Rails \textbullet{} Windows \textbullet{} Linux \textbullet{} Bootstrap \textbullet{} D3.js Library \textbullet{} CMUSphinx \textbullet{} Docker.io \textbullet{} Apache Storm \textbullet{} NLTK \textbullet{} Celery \\
+\location{Tools:}
+Git \textbullet{} Visual Studio \textbullet{} Eclipse \textbullet{} Adobe Photoshop CS4 \textbullet{} Matlab/Octave \textbullet{} MongoDB
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Extra Curriculars}
+\descript{2015 \& 2014 \& 2013}\location{ACM ICPC Regionals} Secured ranks 67, 122, 229\\\vspace{6pt}
+\descript{Microsoft Certification}\location{C\# \& .NET Fundamentals}\vspace{6pt}
+\descript{2013 – 2014}\location{Co-Founder | Design and Content Manager} \textbf{\href{http://findaway.in/}{Find A Way}} - student led registered NGO which aims to use technology to help the underprivileged\\\vspace{6pt}
+\descript{2014}\location{Columnist at The ’Zine} a quarterly magazine concentrating on the youth
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Microsoft}
+\descript{| Software Developer Intern }
+\location{May 2015 – July 2015 | Hyderabad, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Created an \textbf{AutoBVT tool} for service level functional BVT validation for the VLCM team
+\item Reduced pre-production and production scenario testing times from \textbf{4 hours} to \textbf{10 minutes} and paved the way for weekly releases for the SwE team.
+\item
+Scalable and extensible architecture that allowed parallel execution of tests on configurable test scenarios across multiple environments. In production
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{http://precog.iiitd.edu.in/}{Precog, Research Group at IIIT Delhi}}
+\descript{| Research Associate }
+\location{May 2014 – Present | New Delhi, India}
+%\vspace{\topsep}
+Worked remotely with \textbf{\href{http://precog.iiitd.edu.in/people/pk/Home.html}{Prof Dr. Ponnurangam Kumaraguru}} to develop an enterprise tool for forensic analysis of social media data using big data technologies. The tool tracks and visualizes information from various social networks (Facebook, Twitter, Google+, Instagram, etc) to produce insights. Funded by \textbf{Department of Electronics and Information Technology, Government of India} and is actively being used by around 50+ national agencies.
+
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research}
+\runsubsection{USC Information Sciences Institute}
+\descript{| Student Researcher}
+\location{Aug 2016 – Present | Los Angeles, CA}
+Currently working with \textbf{Prof Kristina Lerman}, \textbf{Prof Emilio Ferrara} and \textbf{Prof Ponnurangam Kumaraguru} to analyse the emotions, sociability and demographics in Santa Monica, LA through various social networks.
+\sectionsep
+
+\runsubsection{USC Gamepipe Labs}
+\descript{| Directed Research}
+\location{Aug 2016 – Present | Los Angeles, CA}
+Working with \textbf{Prof Scott Easley} to design video game levels through Deep Machine Learning
+\sectionsep
+
+
+\runsubsection{Gesture Recognition through Accelerometer Data}
+\descript{| Undergrad. Research thesis}
+\location{Sept 2015 – Mar 2016 | NIT Durgapur}
+Low-training gesture recognition to recognize hand motion gestures through accelerometer data on mobile devices.
+%\sectionsep
+
+\section{Projects}
+\runsubsection{Data Science For Social Good}
+\descript{| Recovery groups identification}
+\location{Mar 2016}
+Automated identification and characterization of the presence of alcoholics|narcotics anonymous(AA|NA) recovery groups on social networking platforms.
+\sectionsep
+
+\runsubsection{Online Compiler Judge}
+\descript{| NIT Durgapur}
+\location{Jan 2015 – Feb 2016}
+Built using \textbf{RoR} and \textbf{Docker.io} for hosting several college level international coding competitions in a kernel-level sandboxed environment for a variety of languages. Adopted by the CS department.
+\sectionsep
+
+\runsubsection{Virtual Assistant using CMUSphinx}
+\descript{| Individual Project}
+\location{Jan 2015}
+Virtual desktop assistant created using CMUSphinx library which recognizes dedicated voice commands and translates them to user actions.
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Awards} 
+%\begin{tabular}{rll}
+%2014	     & top 52/2500  & KPCB Engineering Fellow\\
+%2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, %Cornell\\
+%2013	     & National  & Jump Trading Challenge Finalist\\
+%2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+%2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot %Tournament \\
+%2011     & National & Indian National Mathematics Olympiad (INMO) Finalist %\\
+%\end{tabular}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Publications} 
+%\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the %.cls file
+%\bibliographystyle{abbrv}
+%\bibliography{publications}
+%\nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
